@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkish 3 Milk Cake - Riyadh</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fefefe;
+        }
+        header {
+            background: #d2691e; /* Orange for a warm, cake-like feel */
+            color: #fff;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            margin: 3px 0;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1920x600?text=Turkish+3+Milk+Cake') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+        .btn {
+            background: #ff6347;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .menu-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .item {
+            width: 30%;
+            text-align: center;
+            margin-bottom: 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 1rem;
+        }
+        .item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input, textarea, select {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #d2691e;
+            color: #fff;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #d2691e;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background: #d2691e;
+                width: 100%;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .menu-items {
+                flex-direction: column;
+            }
+            .item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Turkish 3 Milk Cake</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home / Ana Sayfa</a></li>
+                <li><a href="#menu">Menu / Menü</a></li>
+                <li><a href="#order">Order / Sipariş</a></li>
+                <li><a href="#contact">Contact / İletişim</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Turkish 3 Milk Cake<br>كعكة الثلاث حليب التركية</h1>
+        <p>Indulge in the moist, creamy delight of authentic Turkish Tres Leches Cake. Freshly baked in Riyadh, Saudi Arabia.<br>
+        Orijinal Türk Üç Sütlü Kek'in nemli, kremsi lezzetinin tadını çıkarın. Riyad, Suudi Arabistan'da taze pişirildi.</p>
+        <a href="#order" class="btn">Order Now / Şimdi Sipariş Ver</a>
+    </section>
+
+    <section id="menu">
+        <h2>Our Cakes / Pastalarımız</h2>
+        <div class="menu-items">
+            <div class="item">
+                <img src="https://via.placeholder.com/300x200?text=Classic+Tres+Leches" alt="Classic Tres Leches">
+                <h3>Classic Tres Leches / Klasik Üç Sütlü</h3>
+                <p>SAR 50 - Traditional sponge cake soaked in three milks, topped with whipped cream.<br>
+                Üç sütle ıslatılmış geleneksel sünger kek, üzerine çırpılmış krema ile.</p>
+            </div>
+            <div class="item">
+                <img src="https://via.placeholder.com/300x200?text=Chocolate+Tres+Leches" alt="Chocolate Tres Leches">
+                <h3>Chocolate Tres Leches / Çikolatalı Üç Sütlü</h3>
+                <p>SAR 60 - Rich chocolate version with cocoa-infused sponge and chocolate drizzle.<br>
+                Kakao ile infüze edilmiş sünger ve çikolata sosu ile zengin çikolata versiyonu.</p>
+            </div>
+            <div class="item">
+                <img src="https://via.placeholder.com/300x200?text=Fruit+Tres+Leches" alt="Fruit Tres Leches">
+                <h3>Fruit Tres Leches / Meyveli Üç Sütlü</h3>
+                <p>SAR 65 - Fresh seasonal fruits on top for a refreshing twist.<br>
+                Üzerinde taze mevsim meyveleri ile ferahlatıcı bir dokunuş.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <h2>Place Your Order / Siparişinizi Verin</h2>
+        <p>Fill out the form below to order. We'll confirm via email or WhatsApp. Delivery available in Riyadh.<br>
+        Sipariş vermek için aşağıdaki formu doldurun. E-posta veya WhatsApp ile onaylayacağız. Riyad'da teslimat mevcut.</p>
+        <form action="https://formspree.io/f/yourformid" method="POST"> <!-- Replace with your Formspree ID -->
+            <input type="text" name="name" placeholder="Your Name / Adınız" required>
+            <input type="email" name="email" placeholder="Your Email / E-posta" required>
+            <input type="tel" name="phone" placeholder="Phone Number / Telefon Numarası" required>
+            <select name="cake" required>
+                <option value="">Select Cake / Pasta Seçin</option>
+                <option value="Classic Tres Leches">Classic Tres Leches - SAR 50</option>
+                <option value="Chocolate Tres Leches">Chocolate Tres Leches - SAR 60</option>
+                <option value="Fruit Tres Leches">Fruit Tres Leches - SAR 65</option>
+            </select>
+            <input type="number" name="quantity" placeholder="Quantity / Miktar" min="1" required>
+            <input type="text" name="address" placeholder="Delivery Address in Riyadh / Riyad'daki Teslimat Adresi" required>
+            <textarea name="notes" placeholder="Special Instructions / Özel Talimatlar"></textarea>
+            <button type="submit">Submit Order / Siparişi Gönder</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us / Bize Ulaşın</h2>
+        <p>Address: 123 Bakery Street, Riyadh, Saudi Arabia<br>Adres: 123 Fırın Caddesi, Riyad, Suudi Arabistan</p>
+        <p>Phone: +966 50 123 4567<br>Telefon: +966 50 123 4567</p>
+        <p>Email: info@turkish3milkcake.com<br>E-posta: info@turkish3milkcake.com</p>
+        <p>Follow us on Instagram: @turkish3milkcake<br>Instagram'da takip edin: @turkish3milkcake</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Turkish 3 Milk Cake. All rights reserved. / Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
